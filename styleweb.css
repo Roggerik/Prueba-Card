@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+:root{
+    --color-Very: hsl(212, 21%, 14%);
+    --color-Dark: hsl(228, 12%, 48%);
+    --color-White: hsl(0, 0%, 100%);
+    --color-Dark-cyan: hsl(158, 36%, 37%);
+    --color-Cream: hsl(30, 38%, 92%);
+}
+
+
+body{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    max-height: 100vh;
+    background-color: var(--color-Cream);
+    position: relative;
+    top:10vh;
+    text-align: center;
+
+
+}
+
+.card__contenedor{
+    text-align: center;
+    margin:auto;
+    width: 480px;
+    height: 390px;
+    background-color: var(--color-White);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+img{
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.texto{
+    width: 90%;
+    height: 90%;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 25px;
+    font-family: 'Montserrat';
+    text-align: left;
+}
+.texto h2{
+    
+    font-size: 10px;
+    font-weight: 100;
+    color: var( --color-Dark);
+    letter-spacing: 4px;
+}
+
+.texto h1{
+    font-family: 'Fraunces';
+    margin-top: 20px;
+    width: 95%;
+    line-height: 25px;
+    margin-bottom: 20px;
+
+}
+
+.paragraph{
+    font-size: 11px;
+    color: var(--color-Dark);
+    line-height: 16px;
+    width: 85%;
+}
+
+.Price{
+    display: flex;
+    margin-top:25px;
+    margin-left: 0;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.Price1{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Fraunces';
+    color: var(--color-Dark-cyan);
+    margin-right:20px;
+}
+    
+
+.Price2{
+    color: var(--color-Dark);
+    font-size: 10px;
+}
+.boton{
+    background-color: var(--color-Dark-cyan);
+    width: 80%;
+    height: 20PX;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton a{
+    color: var(--color-White);
+    font-size: 10px;
+    font-weight: 900;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.boton img{
+    width: 12px;
+    height: 12px;
+}
+
+
+
+@media screen and (min-width:310px) and (max-width:430px){
+
+
+
+    body{
+        max-width: 352px;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .card__contenedor{
+        
+        margin: 0 auto;
+        width: 92%;
+        height: 800px;
+        flex-direction: column;
+    }
+
+    .texto{
+        width: 80%;
+        height: 400px;
+        margin: 20px;
+    }
+    .texto h1{
+        width: 75%;
+        letter-spacing: 2px;
+    }
+    
+    .paragraph{
+        width: 75%; 
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .Price{
+        height: 45px;
+    }
+    .Price .Price1{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .Price .Price2{
+        font-size: 12px;
+    }
+
+    .boton a{
+        text-decoration: none;
+    }
+
+    .attribution{
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+    }
+}
+
+@media screen and (min-width:431px) and (max-width:490px){
+
+    body{
+        max-width: 560px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card__contenedor{
+        position: relative;
+        top: 5px;
+        width: 75%;
+        height: 800px;
+        flex-direction: column;
+    }
+    .contenedor-imagen{
+        width: 100%;
+        height: 480px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+    .texto{
+        width: 85%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .texto h1{
+        width: 79%;
+        letter-spacing: 2px;
+    }
+    
+    .paragraph{
+        width: 250px; 
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .Price{
+        height: 45px;
+    }
+    .Price .Price1{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .Price .Price2{
+        font-size: 12px;
+    }
+
+    .boton a{
+        text-decoration: none;
+    }
+
+    .attribution{
+        margin-top: 45px;
+        width: 100%;
+    }
+}
+    
