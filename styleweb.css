@@ -26,6 +26,7 @@ body{
     position: relative;
     top:10vh;
     text-align: center;
+    overflow: scroll;
 
 
 }
@@ -40,7 +41,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;    
-    overflow: scroll
+    overflow: scroll;
 }
 
 img{
